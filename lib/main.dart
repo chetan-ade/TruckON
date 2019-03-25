@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-<<<<<<< HEAD
 //rohan
-=======
-
->>>>>>> 8f3c3ea36373864ffa3e0021675b6ff6a81a29e9
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
