@@ -69,18 +69,26 @@ class OneTimeCarousel extends StatelessWidget {
                         'TruckON',
                         textScaleFactor: 6.0,
                       )),
+                  Padding(
+                    padding: EdgeInsets.only(top: height/10)
+                  ),
                   Container(
-                      padding: EdgeInsets.only(top: height * 3 / 10),
+                      padding: EdgeInsets.only(top: height/100,bottom: height/100, left: width/60, right: width/60),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(15.0),
+                          bottomRight: Radius.circular(15.0),
+                          topRight: Radius.circular(15.0),
+                          bottomLeft: Radius.circular(15.0)),
+                        color: Colors.white54.withOpacity(0.5),
+                      ),
                       child: Column(children: [
                         Text(
                           heading,
                           textScaleFactor: 2.5,
                         ),
                         Container(
-                            padding: EdgeInsets.only(
-                                top: height / 100,
-                                left: width / 40,
-                                right: width / 40),
+                            padding: EdgeInsets.only(top: height/100,left: width/20,right: width/20),
                             child: Text(
                               desc,
                               textScaleFactor: 1.5,
